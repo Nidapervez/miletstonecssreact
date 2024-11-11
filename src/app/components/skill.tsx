@@ -3,7 +3,7 @@
 const Skill = () => {
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>My Skills</h1>
+      
       <div style={styles.skill}>
         <ul>
           <li>
