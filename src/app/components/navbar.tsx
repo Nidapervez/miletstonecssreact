@@ -48,6 +48,7 @@ const Navbar = () => {
         }
         .nav {
           display: flex;
+          align-items: center;
         }
         .nav ul {
           display: flex;
@@ -73,41 +74,35 @@ const Navbar = () => {
         /* Responsive Styles */
         @media (max-width: 768px) {
           .header {
+            flex-direction: column;
+            align-items: flex-start;
             padding: 15px 20px;
           }
-          .logo h1 {
-            font-size: 20px;
-          }
-          .nav {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            right: 0;
-            background-color: #fff;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          }
-          .nav.active {
-            display: flex;
+          .logo {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
           }
           .menu-icon {
             display: block;
           }
-          .menu-icon i {
-            font-size: 24px;
-            color: #FB374D; /* Pink color for menu icon */
+          .nav {
+            flex-direction: column;
+            width: 100%;
+          }
+          .nav ul {
+            flex-direction: column;
+            width: 100%;
           }
           .nav ul li {
-            margin: 15px 0;
-            text-align: center;
+            width: 100%;
+            margin: 5px 0;
           }
           .nav ul li a {
-            font-size: 18px;
-            padding: 15px;
-            width: 100%;
             display: block;
+            width: 100%;
+            text-align: left;
+            padding: 10px 15px;
           }
         }
       `}</style>
