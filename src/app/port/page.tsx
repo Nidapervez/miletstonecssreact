@@ -1,9 +1,9 @@
 import React from 'react'
-import Port from '../components/portfolio'
+import ProjectsPage from "@/app/components/portfolio"
 
 const page = () => {
   return (
-    <div><Port/></div>
+    <div><ProjectsPage/></div>
   )
 }
 

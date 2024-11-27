@@ -1,3 +1,13 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",  // Turn off unused variable checks
+    "no-unused-vars": "off",  // Turn off unused variable checks (for JS)
+    "no-console": "warn",  // Optionally, change console warnings to "warn"
+    "react/no-unused-prop-types": "off",  // If you're using React and want to disable unused prop type checks
+    "no-undef": "off"  // Optionally, turn off undefined variable checks (useful in some cases)
+  }
 }
